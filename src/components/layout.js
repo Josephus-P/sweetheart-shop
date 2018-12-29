@@ -6,6 +6,7 @@ import Header from './header'
 import './layout.scss'
 import 'bootstrap/dist/css/bootstrap-grid.min.css'
 import 'typeface-charm'
+import 'typeface-overlock'
 
 const Layout = ({ children }) => (
   <StaticQuery

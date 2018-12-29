@@ -23,7 +23,8 @@
     "react-helmet": "^5.2.0",
     "react-icons-kit": "^1.2.1",
     "reactstrap": "^6.5.0",
-    "typeface-charm": "^0.0.71"
+    "typeface-charm": "^0.0.71",
+    "typeface-overlock": "^0.0.54"
   },
   "keywords": [
     "gatsby"

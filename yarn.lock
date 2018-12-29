@@ -11170,6 +11170,11 @@ typeface-charm@^0.0.71:
   resolved "https://registry.yarnpkg.com/typeface-charm/-/typeface-charm-0.0.71.tgz#0f59e0eea69d9ff0c755c1ee4fb878e91bac5897"
   integrity sha512-JoBSk97euAkLHQ0w/z/bNkwJS7k/MIlztOtT1lqz80dJP4ZR+IdL/g45+Upd3EFTud5U7VgqbljyhzKCNrdGAw==
 
+typeface-overlock@^0.0.54:
+  version "0.0.54"
+  resolved "https://registry.yarnpkg.com/typeface-overlock/-/typeface-overlock-0.0.54.tgz#b78da5dc04b71438121193b0d47680d1825b9939"
+  integrity sha512-uFwXIgYmQefj3/Gwps+70RLnFs5gqsYidu8UzM/93Bv8ivXoHD8QI/M7ViPeipV0i/dDVV85CopZO0GMCXSghQ==
+
 ua-parser-js@^0.7.18:
   version "0.7.19"
   resolved "https://registry.yarnpkg.com/ua-parser-js/-/ua-parser-js-0.7.19.tgz#94151be4c0a7fb1d001af7022fdaca4642659e4b"
