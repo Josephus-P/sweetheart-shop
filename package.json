@@ -13,6 +13,7 @@
     "gatsby-plugin-react-helmet": "^3.0.2",
     "gatsby-plugin-sass": "^2.0.7",
     "gatsby-plugin-sharp": "^2.0.14",
+    "gatsby-plugin-snipcart": "^1.0.6",
     "gatsby-source-filesystem": "^2.0.8",
     "gatsby-transformer-sharp": "^2.1.8",
     "node-sass": "^4.11.0",
@@ -20,6 +21,7 @@
     "react": "^16.6.3",
     "react-dom": "^16.6.3",
     "react-helmet": "^5.2.0",
+    "react-icons-kit": "^1.2.1",
     "reactstrap": "^6.5.0",
     "typeface-charm": "^0.0.71"
   },

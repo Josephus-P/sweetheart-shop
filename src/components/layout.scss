@@ -1,3 +1,6 @@
+$primary-font-color: black;
+$alt-font-color: rgb(118, 54, 121);
+
 *,
 *::after,
 *::before {
@@ -15,6 +18,61 @@ body {
   font-weight: 400;
   font-size: 16px;
   line-height: 1.7;
-  color: #777;
+  color: black;
   box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  color: $primary-font-color;
+  transition: all 0.3s;
+
+  &:hover {
+    color: $alt-font-color;
+  }
+}
+
+.header {
+  .header-wrapper {
+    padding: 1.5rem;
+
+    .header-nav-items {
+      display: none;
+      justify-content: space-around;
+
+      a {
+        margin: 0 0.5rem 0 0.5rem;
+      }
+    }
+
+    .header-title {
+      text-align: center;
+      font-size: 2.4rem;
+
+      a {
+        font-family: 'Charm', cursive;
+        font-weight: bold;
+      }
+    }
+
+    .header-cart {
+      display: flex;
+      justify-content: flex-end;
+
+      .snipcart-checkout {
+        margin: 0 0.5rem 0 0.5rem;
+        align-self: center;
+      }
+
+      .snipcart-summary {
+        display: none;
+        flex-flow: row wrap;
+        margin: 0 0.5rem 0 0.5rem;
+
+        span {
+          width: 50%;
+        }
+      }
+    }
+  }
 }
