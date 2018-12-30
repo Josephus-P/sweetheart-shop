@@ -3,7 +3,7 @@ import PropTypes from 'prop-types'
 import React from 'react'
 import { Container, Row, Col } from 'reactstrap'
 import Icon from 'react-icons-kit'
-import { shoppingCart, thMenu } from 'react-icons-kit/typicons'
+import { bag, naviconRound } from 'react-icons-kit/ionicons'
 
 /* eslint-disable */
 const Header = ({ siteTitle }) => (
@@ -14,14 +14,14 @@ const Header = ({ siteTitle }) => (
         <Link to="/products">PRODUCTS</Link>
       </Col>
       <Col xs="2" className="header-toggle d-md-none">
-        <Icon className="header-toggle-icon" size={26} icon={thMenu} />
+        <Icon className="header-toggle-icon" size={26} icon={naviconRound} />
       </Col>
       <Col xs="8" md="6" className="header-title">
         <Link to="/">{siteTitle}</Link>
       </Col>
       <Col xs="2" md="3" className="header-cart">
         <a href="#" className="snipcart-checkout">
-          <Icon size={30} icon={shoppingCart} />
+          <Icon size={26} icon={bag} />
         </a>
         <div className="snipcart-summary d-none d-md-flex">
           <span className="snipcart-total-price" />
