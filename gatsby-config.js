@@ -1,3 +1,5 @@
+require('dotenv').config()
+
 module.exports = {
   siteMetadata: {
     title: `Sweetheart Shop`,
@@ -34,10 +36,13 @@ module.exports = {
     {
       resolve: 'gatsby-plugin-snipcart',
       options: {
-        apiKey:
-          'MWMxNWZkYzctZGMxZS00NjJiLTlkMTAtZDg3YjU5Y2NiM2RmNjM2NzQyMzc4MzAwNTkwOTAw',
+        apiKey: process.env.SNIPCART_KEY,
         autopop: true,
       },
+    },
+    {
+      resolve: 'gatsby-source-datocms',
+      options: { apiToken: process.env.DATO_API_TOKEN },
     },
   ],
 }

@@ -1,0 +1,45 @@
+.jumbotron {
+  position: relative;
+  width: 100%;
+  font-size: 1.8rem;
+
+  @media (min-width: 576px) {
+    font-size: 2.4rem;
+  }
+
+  .gatsby-image-wrapper {
+    height: 500px;
+
+    @media (min-width: 768px) {
+      height: 100%;
+    }
+  }
+  .jumbotron-container {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    line-height: 1.5;
+
+    h1 {
+      padding: 1.5rem;
+      margin-bottom: 5rem;
+      color: white;
+    }
+
+    .home-shop-btn {
+      padding: 1.5rem;
+      background-color: white;
+      font-size: 2.4rem;
+      font-weight: bold;
+      color: #fbafd5;
+      transition: all 0.3s;
+
+      &:hover {
+        background-color: #fbafd5;
+        color: white;
+      }
+    }
+  }
+}

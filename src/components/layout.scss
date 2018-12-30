@@ -1,5 +1,5 @@
-$primary-font-color: black;
-$alt-font-color: rgb(118, 54, 121);
+$primary-font-color: white;
+$alt-font-color: #fbafd5;
 
 *,
 *::after,
@@ -24,15 +24,13 @@ body {
 
 a {
   text-decoration: none;
-  color: $primary-font-color;
-  transition: all 0.3s;
-
-  &:hover {
-    color: $alt-font-color;
-  }
 }
 
 .header {
+  @media (min-width: 576px) {
+    position: fixed;
+    z-index: 1;
+  }
   .header-wrapper {
     padding: 0.5rem;
 
@@ -47,6 +45,12 @@ a {
       a {
         margin: 0 0.5rem 0 0.5rem;
         align-self: center;
+        transition: all 0.3s;
+        color: $primary-font-color;
+
+        &:hover {
+          color: $alt-font-color;
+        }
       }
     }
 
@@ -54,9 +58,20 @@ a {
       align-self: center;
 
       .header-toggle-icon {
+        color: $alt-font-color;
+        transition: all 0.3s;
+
+        @media (min-width: 576px) {
+          color: $primary-font-color;
+        }
+
         &:hover {
+          color: black;
           cursor: pointer;
-          color: $alt-font-color;
+
+          @media (min-width: 576px) {
+            color: $alt-font-color;
+          }
         }
       }
     }
@@ -68,6 +83,20 @@ a {
       a {
         font-family: 'Charm', cursive;
         font-weight: bold;
+        color: $alt-font-color;
+        transition: all 0.3s;
+
+        @media (min-width: 576px) {
+          color: $primary-font-color;
+        }
+
+        &:hover {
+          color: black;
+
+          @media (min-width: 576px) {
+            color: $alt-font-color;
+          }
+        }
       }
     }
 
@@ -78,6 +107,20 @@ a {
       .snipcart-checkout {
         margin: 0 0.5rem 0 0.5rem;
         align-self: center;
+        color: $alt-font-color;
+        transition: all 0.3s;
+
+        @media (min-width: 576px) {
+          color: $primary-font-color;
+        }
+
+        &:hover {
+          color: black;
+
+          @media (min-width: 576px) {
+            color: $alt-font-color;
+          }
+        }
       }
 
       .snipcart-summary {
@@ -85,6 +128,11 @@ a {
         flex-flow: row wrap;
         margin: 0 0.5rem 0 0.5rem;
         align-self: center;
+        color: $alt-font-color;
+
+        @media (min-width: 576px) {
+          color: $primary-font-color;
+        }
       }
     }
   }
