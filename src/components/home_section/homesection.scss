@@ -8,6 +8,17 @@
 
     .section-image {
       margin-bottom: 5rem;
+      align-self: center;
+
+      @media (min-width: 992px) {
+        margin-bottom: 0;
+      }
+
+      .gatsby-image-wrapper {
+        height: 100%;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2),
+          0 6px 20px 0 rgba(0, 0, 0, 0.19);
+      }
     }
 
     .section-desc {
@@ -15,8 +26,20 @@
       line-height: 2;
 
       h2 {
+        position: relative;
         font-size: 2.8rem;
         color: #d12495;
+        margin-bottom: 2.5rem;
+
+        &::after {
+          content: '';
+          position: absolute;
+          width: 35%;
+          bottom: 15%;
+          left: 50%;
+          transform: translateX(-50%);
+          border-bottom: 1px solid #fbafd5;
+        }
       }
 
       p {

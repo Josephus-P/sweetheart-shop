@@ -43,7 +43,7 @@ export const query = graphql`
       jumbotronText
       jumbotronSubText
       jumbotronImage {
-        fluid(maxHeight: 400, imgixParams: { auto: "compress" }) {
+        fluid(maxHeight: 400) {
           ...GatsbyDatoCmsFluid
         }
       }
