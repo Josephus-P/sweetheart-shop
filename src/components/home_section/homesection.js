@@ -8,10 +8,10 @@ const HomeSection = ({ index, image, header, desc }) => {
   let imageClass
   let descClass
   if (index % 2 === 0) {
-    imageClass = 'section-image order-1 align-items-center'
+    imageClass = 'section-image order-1'
     descClass = 'section-desc order-2'
   } else {
-    imageClass = 'section-image order-1 order-lg-2 align-items-center'
+    imageClass = 'section-image order-1 order-lg-2'
     descClass = 'section-desc order-2 order-lg-1'
   }
   return (
