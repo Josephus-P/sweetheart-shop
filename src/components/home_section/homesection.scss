@@ -1,0 +1,27 @@
+.section {
+  .section-wrapper {
+    padding: 1.5rem;
+
+    @media (min-width: 576px) {
+      padding: 5rem;
+    }
+
+    .section-image {
+      margin-bottom: 5rem;
+    }
+
+    .section-desc {
+      text-align: center;
+      line-height: 2;
+
+      h2 {
+        font-size: 2.8rem;
+        color: #d12495;
+      }
+
+      p {
+        font-size: 2.1rem;
+      }
+    }
+  }
+}

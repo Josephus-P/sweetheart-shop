@@ -1,6 +1,7 @@
 .jumbotron {
   position: relative;
   width: 100%;
+  margin-bottom: 5rem;
   font-size: 1.8rem;
 
   @media (min-width: 576px) {
@@ -14,20 +15,31 @@
       height: 100%;
     }
   }
+
   .jumbotron-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     position: absolute;
     top: 40%;
     left: 50%;
+    height: 100%;
     transform: translate(-50%, -50%);
     text-align: center;
     line-height: 1.5;
 
     h1 {
       padding: 1.5rem;
-      margin-bottom: 5rem;
       color: white;
     }
 
+    p {
+      font-size: 2.4rem;
+      padding: 1.5rem;
+      margin-bottom: 1.5rem;
+      color: white;
+    }
     .home-shop-btn {
       padding: 1.5rem;
       background-color: white;
