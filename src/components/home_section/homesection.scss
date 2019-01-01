@@ -21,7 +21,8 @@
 
         img {
           object-fit: cover !important;
-          font-family: 'object-fit: contain !important; object-position: center center !important;';
+          object-position: center center !important;
+          font-family: 'object-fit: cover !important; object-position: center center !important;';
         }
       }
     }
