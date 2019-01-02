@@ -27,17 +27,17 @@ a {
 }
 
 .header {
-  @media (min-width: 576px) {
-    position: fixed;
-    z-index: 1;
+  position: fixed;
+  z-index: 1;
+  background-color: white;
+  transition: all 0.3s;
+
+  @media (min-width: 768px) {
+    background-color: rgba(255, 255, 255, 0);
   }
 
   .header-wrapper {
     padding: 0.5rem;
-
-    @media (min-width: 576px) {
-      padding: 1.5rem;
-    }
 
     .header-nav-items {
       display: none;
@@ -62,7 +62,7 @@ a {
         color: $alt-font-color;
         transition: all 0.3s;
 
-        @media (min-width: 576px) {
+        @media (min-width: 768px) {
           color: $primary-font-color;
         }
 
@@ -70,7 +70,7 @@ a {
           color: #d12495;
           cursor: pointer;
 
-          @media (min-width: 576px) {
+          @media (min-width: 768px) {
             color: $alt-font-color;
           }
         }
@@ -87,7 +87,7 @@ a {
         color: $alt-font-color;
         transition: all 0.3s;
 
-        @media (min-width: 576px) {
+        @media (min-width: 768px) {
           color: $primary-font-color;
           font-size: 2.8rem;
         }
@@ -95,7 +95,7 @@ a {
         &:hover {
           color: #d12495;
 
-          @media (min-width: 576px) {
+          @media (min-width: 768px) {
             color: $alt-font-color;
           }
         }
@@ -112,14 +112,14 @@ a {
         color: $alt-font-color;
         transition: all 0.3s;
 
-        @media (min-width: 576px) {
+        @media (min-width: 768px) {
           color: $primary-font-color;
         }
 
         &:hover {
           color: #d12495;
 
-          @media (min-width: 576px) {
+          @media (min-width: 768px) {
             color: $alt-font-color;
           }
         }
@@ -132,11 +132,45 @@ a {
         align-self: center;
         color: $alt-font-color;
 
-        @media (min-width: 576px) {
+        @media (min-width: 768px) {
           color: $primary-font-color;
         }
       }
     }
+  }
+
+  .header-mobile {
+    height: 100%;
+    background-color: white;
+    animation-name: mobileMenu;
+    animation-duration: 0.3s;
+
+    .header-mobile-wrapper {
+      flex-direction: column;
+      align-items: center;
+
+      a {
+        padding: 1.5rem;
+        color: $alt-font-color;
+      }
+    }
+  }
+}
+
+.header-scroll-font-color {
+  color: $alt-font-color !important;
+  transition: all 0.3s;
+
+  &:hover {
+    color: #d12495 !important;
+  }
+}
+@keyframes mobileMenu {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(0);
   }
 }
 

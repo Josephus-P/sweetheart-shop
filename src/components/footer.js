@@ -68,7 +68,7 @@ const Footer = ({ year }) => (
 )
 
 Footer.propTypes = {
-  year: PropTypes.string,
+  year: PropTypes.number,
 }
 
 export default Footer

@@ -37,7 +37,7 @@ class Layout extends Component {
           <>
             <Header siteTitle={data.site.siteMetadata.title} />
             {this.props.children}
-            <Footer year={this.state.getFullYear} />
+            <Footer year={this.state.year} />
           </>
         )}
       />
