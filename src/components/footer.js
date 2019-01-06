@@ -1,13 +1,13 @@
-import React from 'react'
-import PropTypes from 'prop-types'
-import { StaticQuery, graphql } from 'gatsby'
-import { Container, Row, Col } from 'reactstrap'
-import Img from 'gatsby-image'
-import Icon from 'react-icons-kit'
-import { socialInstagram, socialFacebook } from 'react-icons-kit/ionicons'
+import React from 'react';
+import PropTypes from 'prop-types';
+import { StaticQuery, graphql } from 'gatsby';
+import { Container, Row, Col } from 'reactstrap';
+import Img from 'gatsby-image';
+import Icon from 'react-icons-kit';
+import { socialInstagram, socialFacebook } from 'react-icons-kit/ionicons';
 
 /* eslint-disable */
-const Footer = ({ year }) => (
+const Footer = () => (
   <StaticQuery
     query={graphql`
       query logo {
@@ -49,7 +49,8 @@ const Footer = ({ year }) => (
             </Col>
             <Col className="py-5" xs="12">
               <p>
-                &copy; {year}, Sweetheart Beauty and Soap | Built by{' '}
+                &copy; {new Date().getFullYear()}, Sweetheart Beauty and Soap |
+                Built by{' '}
                 <a
                   href="https://www.linkedin.com/in/josueperalta"
                   target="_blank"
@@ -65,10 +66,10 @@ const Footer = ({ year }) => (
       </>
     )}
   />
-)
+);
 
 Footer.propTypes = {
   year: PropTypes.number,
-}
+};
 
-export default Footer
+export default Footer;
