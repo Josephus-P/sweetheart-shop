@@ -1,47 +1,46 @@
-import { Link } from 'gatsby'
-import PropTypes from 'prop-types'
-import React, { Component } from 'react'
-import { Container, Row, Col } from 'reactstrap'
-import Icon from 'react-icons-kit'
-import { bag, naviconRound, closeRound } from 'react-icons-kit/ionicons'
+import { Link } from 'gatsby';
+import PropTypes from 'prop-types';
+import React, { Component } from 'react';
+import { Container, Row, Col } from 'reactstrap';
+import Icon from 'react-icons-kit';
+import { bag, naviconRound, closeRound } from 'react-icons-kit/ionicons';
 
 /* eslint-disable */
 class Header extends Component {
   constructor(props) {
-    super(props)
-    this.navScroll = this.navScroll.bind(this)
+    super(props);
+    this.navScroll = this.navScroll.bind(this);
     this.state = {
       mobileToggle: false,
       navBgToggle: false,
-    }
+    };
   }
 
   mobileToggleHandler = () => {
-    this.setState({ mobileToggle: !this.state.mobileToggle })
-  }
+    this.setState({ mobileToggle: !this.state.mobileToggle });
+  };
 
   componentDidMount() {
     if (typeof window !== undefined) {
-      document.addEventListener('scroll', this.navScroll)
+      document.addEventListener('scroll', this.navScroll);
     }
   }
 
   componentWillUnmount() {
-    document.removeEventListener('scroll', this.navScroll)
+    document.removeEventListener('scroll', this.navScroll);
   }
 
   navScroll = () => {
-    console.log('hi')
     if (window.scrollY > 0 && !this.state.navBgToggle) {
-      this.setState({ navBgToggle: true })
+      this.setState({ navBgToggle: true });
     } else if (window.scrollY === 0) {
-      this.setState({ navBgToggle: false })
+      this.setState({ navBgToggle: false });
     }
-  }
+  };
 
   render() {
-    const navScrollColor = 'header-scroll-font-color'
-    const scrollToggle = this.state.navBgToggle
+    const navScrollColor = 'header-scroll-font-color';
+    const scrollToggle = this.state.navBgToggle;
 
     return (
       <Container
@@ -101,16 +100,16 @@ class Header extends Component {
           </Col>
         </Row>
       </Container>
-    )
+    );
   }
 }
 
 Header.propTypes = {
   siteTitle: PropTypes.string,
-}
+};
 
 Header.defaultProps = {
   siteTitle: ``,
-}
+};
 
-export default Header
+export default Header;

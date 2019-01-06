@@ -1,67 +1,70 @@
-.jumbotron {
-  position: relative;
-  width: 100%;
-  margin-bottom: 5rem;
-  font-size: 1.8rem;
-
-  @media (min-width: 576px) {
-    font-size: 2.4rem;
-  }
-
-  .gatsby-image-wrapper {
-    height: 500px;
+.home-page {
+  .jumbotron {
     position: relative;
-    @media (min-width: 768px) {
-      height: 100%;
+    width: 100%;
+    margin-bottom: 5rem;
+    font-size: 1.8rem;
+
+    @media (min-width: 576px) {
+      font-size: 2.4rem;
     }
 
-    &::after {
-      content: '';
-      width: 100%;
-      height: 100%;
+    .gatsby-image-wrapper {
+      height: 500px;
+      position: relative;
 
-      top: 0;
-      left: 0;
+      @media (min-width: 768px) {
+        height: 100%;
+      }
+
+      &::after {
+        content: '';
+        width: 100%;
+        height: 100%;
+
+        top: 0;
+        left: 0;
+        position: absolute;
+        background: rgba(0, 0, 0, 0.2);
+      }
+    }
+
+    .jumbotron-container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
       position: absolute;
-      background: rgba(0, 0, 0, 0.2);
-    }
-  }
+      top: 40%;
+      left: 50%;
+      height: 100%;
+      transform: translate(-50%, -50%);
+      text-align: center;
+      line-height: 1.5;
 
-  .jumbotron-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    position: absolute;
-    top: 40%;
-    left: 50%;
-    height: 100%;
-    transform: translate(-50%, -50%);
-    text-align: center;
-    line-height: 1.5;
-
-    h1 {
-      padding: 1.5rem;
-      color: white;
-    }
-
-    p {
-      font-size: 2.4rem;
-      padding: 1.5rem;
-      margin-bottom: 1.5rem;
-      color: white;
-    }
-    .home-shop-btn {
-      padding: 1.5rem;
-      background-color: white;
-      font-size: 2.4rem;
-      font-weight: bold;
-      color: #fbafd5;
-      transition: all 0.3s;
-
-      &:hover {
-        background-color: #fbafd5;
+      h1 {
+        padding: 1.5rem;
         color: white;
+      }
+
+      p {
+        font-size: 2.4rem;
+        padding: 1.5rem;
+        margin-bottom: 1.5rem;
+        color: white;
+      }
+      .home-shop-btn {
+        padding: 1.5rem;
+        background-color: white;
+        font-size: 2.4rem;
+        font-weight: bold;
+        color: #fbafd5;
+        transition: all 0.3s;
+
+        &:hover {
+          background-color: #fbafd5;
+          color: white;
+        }
       }
     }
   }

@@ -1,3 +1,106 @@
 .products-page {
-  background-color: #faf5f3;
+  .jumbotron {
+    position: relative;
+    width: 100%;
+    margin-bottom: 5rem;
+    font-size: 2.4rem;
+
+    @media (min-width: 576px) {
+      font-size: 2.8rem;
+    }
+
+    .gatsby-image-wrapper {
+      height: 300px;
+      position: relative;
+
+      &::after {
+        content: '';
+        width: 100%;
+        height: 100%;
+
+        top: 0;
+        left: 0;
+        position: absolute;
+        background: rgba(0, 0, 0, 0.2);
+      }
+
+      img {
+        object-fit: cover !important;
+        object-position: center center !important;
+        font-family: 'object-fit: cover !important; object-position: center center !important;';
+      }
+    }
+
+    .jumbotron-container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      height: 100%;
+      transform: translate(-50%, -50%);
+      text-align: center;
+      line-height: 1.5;
+
+      h1 {
+        position: relative;
+        color: white;
+
+        &::after {
+          content: '';
+          position: absolute;
+          width: 75%;
+          bottom: 10%;
+          left: 50%;
+          transform: translateX(-50%);
+          border-bottom: 2px solid white;
+        }
+      }
+    }
+  }
+
+  .categories {
+    .category-container {
+      display: flex;
+      justify-content: center;
+      padding: 5rem;
+      text-align: center;
+      font-size: 2.1rem;
+
+      p {
+        align-self: center;
+        padding: 1rem;
+      }
+
+      span {
+        border: 1px solid pink;
+        border-radius: 0.8rem;
+        padding: 1rem;
+        width: 8%;
+        transition: all 0.3s;
+
+        &:hover {
+          cursor: pointer;
+          box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2),
+            0 3px 10px 0 rgba(0, 0, 0, 0.19);
+        }
+      }
+    }
+  }
+
+  .product {
+    a {
+      min-height: 500px;
+
+      .gatsby-image-wrapper {
+        img {
+          object-fit: cover !important;
+          object-position: center center !important;
+          font-family: 'object-fit: cover !important; object-position: center center !important;';
+        }
+      }
+    }
+  }
 }
