@@ -16,7 +16,7 @@ const SecondPage = ({
   return (
     <Layout>
       <SEO title="Page two" />
-      <div className="products-page" fluid>
+      <div className="products-page">
         <div className="jumbotron">
           <Img fluid={data.productPage.jumbotronImage.fluid} />
           <Container className="jumbotron-container">
