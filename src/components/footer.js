@@ -49,7 +49,7 @@ const Footer = () => (
             </Col>
             <Col className="py-5" xs="12">
               <p>
-                &copy; {new Date().getFullYear()}, Sweetheart Beauty and Soap |
+                &copy; {new Date().getFullYear()} Sweetheart Beauty and Soap |
                 Built by{' '}
                 <a
                   href="https://www.linkedin.com/in/josueperalta"

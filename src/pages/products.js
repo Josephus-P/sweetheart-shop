@@ -7,7 +7,7 @@ import Layout from '../components/layout';
 import SEO from '../components/seo';
 import './scss/products.scss';
 
-const SecondPage = ({
+const ProductsPage = ({
   data,
   data: {
     allDatoCmsProduct: { edges },
@@ -16,7 +16,7 @@ const SecondPage = ({
   return (
     <Layout>
       <SEO title="Page two" />
-      <div className="products-page" fluid>
+      <div className="products-page">
         <div className="jumbotron">
           <Img fluid={data.productPage.jumbotronImage.fluid} />
           <Container className="jumbotron-container">
@@ -25,17 +25,9 @@ const SecondPage = ({
         </div>
         <Container>
           <Row>
-            <Col className="categories" xs="12">
-              <div className="category-container">
-                <p style={{ display: 'inline-block' }}>Categories: </p>
-                <span>All</span>
-                <span>Bath Bombs</span>
-                <span>Soap</span>
-              </div>
-            </Col>
             {edges.map((product, index) => (
               <Col className="product" key={index} xs="6" md="4">
-                <Link to={product.node.title}>
+                <Link to={`/products/${product.node.pageUrl}`}>
                   <Img fluid={product.node.images[0].fluid} />
                 </Link>
                 <p>{product.node.title}</p>
@@ -49,7 +41,7 @@ const SecondPage = ({
   );
 };
 
-export default SecondPage;
+export default ProductsPage;
 
 export const productPageQuery = graphql`
   query ProductPageQuery {
@@ -66,6 +58,7 @@ export const productPageQuery = graphql`
           productId
           price
           description
+          pageUrl
           images {
             fluid(maxHeight: 700) {
               ...GatsbyDatoCmsFluid
