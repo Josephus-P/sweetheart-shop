@@ -19,6 +19,18 @@ const ProductPage = ({
               <Img fluid={product.node.images[0].fluid} />
               <p>{product.node.title}</p>
               <span>{product.node.price}</span>
+              <button
+                className="snipcart-add-item"
+                data-item-id={product.node.productId}
+                data-item-name={product.node.title}
+                data-item-price={product.node.price}
+                data-item-url={`http://localhost:8000/products/${
+                  product.node.pageUrl
+                }`}
+                data-item-description={product.node.description}
+              >
+                Add to Cart
+              </button>
             </Col>
           ))}
         </Row>
@@ -35,6 +47,7 @@ export const productPageQuery = graphql`
       edges {
         node {
           productId
+          pageUrl
           price
           description
           images {
