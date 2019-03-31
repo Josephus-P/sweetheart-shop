@@ -24,7 +24,7 @@ const ProductPage = ({
                 data-item-id={product.node.productId}
                 data-item-name={product.node.title}
                 data-item-price={product.node.price}
-                data-item-url={`http://localhost:8000/products/${
+                data-item-url={`https://sweetheartshop.netlify.com/products/${
                   product.node.pageUrl
                 }`}
                 data-item-description={product.node.description}
