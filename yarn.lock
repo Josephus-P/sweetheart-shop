@@ -4959,7 +4959,7 @@ gatsby-react-router-scroll@^2.0.7:
     scroll-behavior "^0.9.9"
     warning "^3.0.0"
 
-gatsby-source-datocms@^2.0.1:
+gatsby-source-datocms@^2.0.2:
   version "2.0.2"
   resolved "https://registry.yarnpkg.com/gatsby-source-datocms/-/gatsby-source-datocms-2.0.2.tgz#576b90c47ce27a9f6bc72b1b81d6f7f29642aadb"
   integrity sha512-4ysAb96YzhgJjri4p+R5YJTzk8XhbCZHDvdOWQahphhkgJzHsIlYkIDMClrbH+rMSEEbS2YPKodVWPtRb2Z1gA==
